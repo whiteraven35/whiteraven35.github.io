@@ -4,171 +4,96 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Link Dock</title>
-  <meta name="description" content="Link Dock helps you save, organize, filter, and revisit links later.">
+  <meta name="description" content="Link Dock is an iOS app for saving, organizing, and revisiting links.">
   <style>
-    :root {
-      color-scheme: light;
-      --bg: #f5f7fb;
-      --card: #ffffff;
-      --text: #141821;
-      --muted: #5f6b7a;
-      --primary: #2959c7;
-      --accent: #33c7b8;
-      --border: rgba(20, 24, 33, 0.1);
-    }
-
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.6;
-      color: var(--text);
-      background: radial-gradient(circle at top left, rgba(51, 199, 184, 0.2), transparent 36%),
-        linear-gradient(180deg, #ffffff 0%, var(--bg) 72%);
+      color: #141821;
+      background: #f5f7fb;
     }
 
     main {
-      width: min(920px, calc(100% - 32px));
+      width: min(720px, calc(100% - 32px));
       margin: 0 auto;
-      padding: 56px 0;
+      padding: 48px 0 64px;
     }
 
-    .hero {
-      padding: 40px;
-      border: 1px solid var(--border);
-      border-radius: 28px;
-      background: rgba(255, 255, 255, 0.86);
-      box-shadow: 0 24px 70px rgba(20, 24, 33, 0.09);
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 12px;
-      border-radius: 999px;
-      color: var(--primary);
-      background: rgba(41, 89, 199, 0.09);
-      font-weight: 700;
-      font-size: 14px;
+    header, section {
+      background: #ffffff;
+      border: 1px solid rgba(20, 24, 33, 0.1);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 20px;
     }
 
     h1 {
-      margin: 22px 0 12px;
-      font-size: clamp(42px, 8vw, 72px);
-      line-height: 1;
-      letter-spacing: -0.06em;
-    }
-
-    h2 {
-      margin: 0 0 10px;
-      font-size: 24px;
+      margin: 0 0 8px;
+      font-size: 2rem;
       letter-spacing: -0.03em;
     }
 
-    p {
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.25rem;
+    }
+
+    p, li {
+      color: #5f6b7a;
+    }
+
+    ul {
       margin: 0;
-      color: var(--muted);
-    }
-
-    .lead {
-      max-width: 680px;
-      font-size: 20px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      margin-top: 24px;
-    }
-
-    .card {
-      padding: 22px;
-      border: 1px solid var(--border);
-      border-radius: 20px;
-      background: var(--card);
-    }
-
-    .contact {
-      margin-top: 24px;
-      padding: 24px;
-      border-radius: 20px;
-      background: #141821;
-      color: #ffffff;
-    }
-
-    .contact p {
-      color: rgba(255, 255, 255, 0.72);
+      padding-left: 20px;
     }
 
     a {
-      color: inherit;
-      font-weight: 700;
+      color: #2959c7;
+      font-weight: 600;
     }
 
     footer {
-      margin-top: 28px;
-      color: var(--muted);
-      font-size: 14px;
       text-align: center;
-    }
-
-    @media (max-width: 760px) {
-      main {
-        padding: 28px 0;
-      }
-
-      .hero {
-        padding: 28px;
-      }
-
-      .grid {
-        grid-template-columns: 1fr;
-      }
+      color: #5f6b7a;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
   <main>
-    <section class="hero">
-      <span class="badge">Link Dock for iOS</span>
-      <h1>Save links now. Find them later.</h1>
-      <p class="lead">
-        Link Dock is a simple iOS app for saving links, organizing them with categories and notes,
-        adding reminders, attaching selected media, and returning to useful pages when you need them.
+    <header>
+      <h1>Link Dock</h1>
+      <p>
+        Link Dock is an iOS app that helps you save links, organize them with categories and notes,
+        set optional reminders, and revisit useful pages when you need them.
       </p>
+      <p>
+        Developer: Ayhan Can Isidici<br>
+        Bundle ID: com.ayhan.isidici.linkdock
+      </p>
+    </header>
 
-      <div class="grid" aria-label="Link Dock features">
-        <article class="card">
-          <h2>Organize</h2>
-          <p>Save URLs with titles, categories, notes, dates, and domains so important links stay easy to find.</p>
-        </article>
-        <article class="card">
-          <h2>Revisit</h2>
-          <p>Set optional reminders and use search or filters to quickly return to saved content.</p>
-        </article>
-        <article class="card">
-          <h2>Private by Design</h2>
-          <p>Your saved link data is stored on your device, with optional iCloud support when available.</p>
-        </article>
-      </div>
+    <section>
+      <h2>Contact</h2>
+      <p>
+        For support, privacy questions, or general inquiries, email us at
+        <a href="mailto:linkdock.request@gmail.com">linkdock.request@gmail.com</a>.
+      </p>
+    </section>
 
-      <section class="contact">
-        <h2>Privacy Policy and Terms</h2>
-        <p>
-          Link Dock does not operate its own account system or server for saved links.
-          For privacy questions, terms, or support requests, contact
-          <a href="mailto:linkdock.request@gmail.com">linkdock.request@gmail.com</a>.
-        </p>
-      </section>
+    <section>
+      <h2>Legal</h2>
+      <ul>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms-of-use.html">Terms of Use</a></li>
+      </ul>
     </section>
 
     <footer>
-      <p>Copyright 2026 Ayhan Can Isidici. Link Dock is available on the App Store.</p>
+      <p>Copyright 2026 Ayhan Can Isidici. All rights reserved.</p>
     </footer>
   </main>
 </body>
